@@ -17,3 +17,5 @@ As a user, so that I can have somewhere to stay,
 I want to reserve a space.
 
 ##Team
+
+Sam was here
