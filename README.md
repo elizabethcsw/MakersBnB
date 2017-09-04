@@ -16,4 +16,6 @@ I want to view listings
 As a user, so that I can have somewhere to stay,
 I want to reserve a space.
 
+Editing this
+
 ##Team
