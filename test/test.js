@@ -12,13 +12,26 @@ var chai = require('chai');
 var chaiHttp = require('chai-http');
 var server = require('../server/app');
 var should = chai.should();
+var assert = chai.assert;
 
 chai.use(chaiHttp);
 
-describe('Blobs', function() {
-  it('should list ALL blobs on /blobs GET');
-  it('should list a SINGLE blob on /blob/<id> GET');
-  it('should add a SINGLE blob on /blobs POST');
-  it('should update a SINGLE blob on /blob/<id> PUT');
-  it('should delete a SINGLE blob on /blob/<id> DELETE');
+const Browser = require('zombie');
+
+// We're going to make requests to http://example.com/signup
+// Which will be routed to our test server localhost:3000
+Browser.localhost('example.com', 3000);
+
+describe('Makersbnb', function() {
+  const browser = new Browser();
+
+  it('should load the webpage on / Get', function(){
+    return browser.visit('/')
+  });
+
+  it('should have login button on / Get', function(){
+    browser.visit('/')
+    browser.assert.button('Sign up')
+  });
+
 });

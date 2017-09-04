@@ -19,7 +19,7 @@
   "dependencies": {
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
-    "mocha": "*"
+    "mocha": "^3.5.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",
