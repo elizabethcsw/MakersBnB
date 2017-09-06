@@ -17,12 +17,22 @@
   },
   "homepage": "https://github.com/elizabethcsw/testingnodeapp#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
-    "mocha": "^3.5.0"
+    "mocha": "^3.5.0",
+    "morgan": "^1.8.2",
+    "mysql": "^2.14.1",
+    "pg": "^7.3.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.8.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",
     "chai-http": "^1.0.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
 }
